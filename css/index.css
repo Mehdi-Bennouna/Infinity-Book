@@ -1,3 +1,4 @@
+
 :root {
     --primary-background: beige;
     --secondary-background: #eae5d1;
@@ -7,6 +8,7 @@
     --text-white: white;
 
     --border-radius: 7px;
+    scroll-behavior: smooth;
 }
 
 .primary-font {
@@ -25,3 +27,6 @@
     line-height: 15px;
 }
 
+body {
+    background-color: var(--primary-background);
+}
