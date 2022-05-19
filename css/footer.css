@@ -1,0 +1,7 @@
+footer {
+    position: absolute;
+    top: 100vh;
+    height: 300px;
+    width: 100vw;
+    background-color: yellow;
+}

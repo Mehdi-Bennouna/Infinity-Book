@@ -1,0 +1,27 @@
+:root {
+    --primary-background: beige;
+    --secondary-background: #eae5d1;
+    --primary-color: #3a6351;
+
+    --text-black: black;
+    --text-white: white;
+
+    --border-radius: 7px;
+}
+
+.primary-font {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.secondary-font {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
