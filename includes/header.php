@@ -2,9 +2,9 @@
 	<div class="logo">Infinity Book</div>
 	<nav>
 		<ul class="navbar__links">
-			<li><a href="test.php">Home</a></li>
-			<li><a href="#">Books</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="books.php	">Books</a></li>
+			<li><a href="#footer">Contact</a></li>
 		</ul>
 	</nav>
 	<a href=""><button>Sign Up</button></a>
