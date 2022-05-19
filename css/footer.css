@@ -1,7 +1,7 @@
 footer {
     position: absolute;
-    top: 100vh;
+    bottom: 300px;
     height: 300px;
-    width: 100vw;
+    width: 100%;
     background-color: yellow;
 }
