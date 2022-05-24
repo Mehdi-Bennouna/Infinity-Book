@@ -1,49 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
-
 header {
-    position: relative;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 20px 5%;
-    font-family: Poppins;
-    font-weight: 400;
-    z-index: 2;
-}
+    justify-content: flex-end;
 
-.logo {
-    margin-right: auto;
-    cursor: pointer;
+    padding: 40px 5%;
+    height: 5vh;
 }
-
-.navbar__links {
-    list-style: none;
-}
-
-.navbar__links li {
-    cursor: pointer;
-    display: inline-block;
-    margin: 0px 20px;
-}
-
 a {
     color: var(--text-black);
 }
 
+.logo {
+    margin-right: auto;
+}
+
+.navbar__links li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
 header button {
+    background-color: #3a6351;
     margin-left: 20px;
     padding: 0.75rem 1.25rem;
-    background-color: #3a6351;
-    outline: none;
-    border: none;
+
     border-radius: var(--border-radius);
-    color: #fff;
+    border: none;
+    outline: none;
+
+    color: var(--text-white);
+
     cursor: pointer;
 }
 
 .login__button {
-    border: 2px #3a6351 solid;
-    padding: 0.75rem 1.5rem;
     background: none;
+    padding: 0.75rem 1.5rem;
+
+    border: 2px var(--primary) solid;
+
     color: black;
 }

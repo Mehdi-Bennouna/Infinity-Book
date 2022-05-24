@@ -1,1 +1,1 @@
-<footer id="footer"></footer>
+<footer id="footer">This is a footer</footer>

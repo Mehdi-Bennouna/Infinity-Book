@@ -3,12 +3,12 @@
 
 <head>
 	<?php include_once "./includes/head.php" ?>
-	<link rel="stylesheet" href="./css/home.css" />
+	<link rel="stylesheet" href="./css/home.css">
 	<title>Infinity Book | Home</title>
 </head>
 
 <body>
-	<?php include_once "./includes/header.php" ?>
+	<?php include_once "./includes/nav.php" ?>
 
 	<main>
 		<h1>Infinity Book</h1>
