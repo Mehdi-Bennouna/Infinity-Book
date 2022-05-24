@@ -11,33 +11,28 @@
 	<?php include_once "./includes/nav.php" ?>
 	<main>
 		<div class="grid-container">
-			<div class="book-container">
-				<a href="#">
-					<img src="./img/4671.jpg" alt="book-image">
+
+			<?php
+			$conn = mysqli_connect("localhost", "admin", "some_pass", "infinitybook");
+			$query  = "SELECT * FROM `books`";
+			$result = mysqli_query($conn, $query);
+
+
+			while ($data = $result->fetch_assoc()) {
+				echo "
+				<div class='book-container'>
+				<a href='/book.php/" . $data["BookTitle"] . "'>
+				<img src='" . $data["ImageURLL"] . "' alt='book-image'>
 				</a>
-				<h3>The Great Gatsby</h3>
-			</div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
-			<div class="book-container"></div>
+				<h3>" . $data["BookTitle"] . "</h3>
+				</div>
+				";
+			}
+
+			mysqli_free_result($result);
+			mysqli_close($conn);
+
+			?>
 		</div>
 	</main>
 	<?php include_once "./includes/footer.php" ?>

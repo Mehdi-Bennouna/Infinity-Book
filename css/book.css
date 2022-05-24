@@ -1,0 +1,43 @@
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 95vw;
+	min-height: 95vh;
+}
+
+.single_book_container {
+	padding: 50px;
+	display: flex;
+	justify-content: flex-start;
+	width: 70vw;
+	border-radius: var(--border-radius);
+	background-color: var(--background-secondary);
+	height: 60vh;
+}
+
+.single_book_container img {
+	margin-right: 50px;
+	border-radius: var(--border-radius);
+}
+
+.right {
+	padding: 40px;
+}
+
+.single_book_container h1 {
+	margin-bottom: 10px;
+}
+
+#author {
+	font-weight: 300;
+	margin-bottom: 50px;
+}
+
+.single_book_container p {
+	margin-bottom: 40px;
+}
+
+.bot {
+	font-size: 17px;
+}

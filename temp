@@ -1,0 +1,16 @@
+$conn = mysqli_connect("localhost", "admin", "some_pass", "infinitybook");
+
+if (!$conn) {
+	die("Connection failed: " . mysqli_connect_error());
+}
+
+$query  = "SELECT `BookTitle` FROM `books` WHERE `ISBN`='074322678X'";
+
+$result = mysqli_query($conn, $query);
+
+$data = mysqli_fetch_assoc($result);
+mysqli_free_result($result);
+
+echo $data["BookTitle"];
+
+mysqli_close($conn);

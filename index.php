@@ -12,12 +12,28 @@
 
 	<main>
 		<h1>Infinity Book</h1>
-		<form class="search-bar" action="">
+		<form class="search-bar" action="/book.php">
+
 			<input class="search-bar__bar" type="text" name="search" id="search" />
-			<button class="search-bar__button" type="submit">
+			<button id="search_button" class="search-bar__button" type="submit">
 				<img src="./img/search-interface-symbol 1.svg" alt="search-icon" />
 			</button>
 		</form>
+		<?php
+		// $conn = mysqli_connect("localhost", "admin", "some_pass", "infinitybook");
+
+		// function search($conn, $seach_query)
+		// {
+		// 	$query  = "SELECT `ISBN` FROM `books` WHERE `BookTitle`=" . $seach_query;
+		// 	$result = mysqli_query($conn, $query);
+
+		// 	$data = mysqli_fetch_assoc($result);
+
+		// 	mysqli_free_result($result);
+		// }
+
+		// mysqli_close($conn);
+		?>
 		<ul class="category-links">
 			<li><a href="">Poetry</a></li>
 			<li><a href="">Drama</a></li>
@@ -29,7 +45,7 @@
 	</main>
 
 	<?php include_once "./includes/footer.php" ?>
-
+	<script src="./javascript/index.js"></script>
 </body>
 
 </html>

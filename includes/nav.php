@@ -8,6 +8,4 @@
 		</ul>
 	</nav>
 
-	<button>Sign Up</button>
-	<button class="login__button">Login</button>
 </header>
