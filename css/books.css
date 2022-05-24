@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 5vh;
+
+    min-height: 95vh;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    padding: 40px 14px 40px 14px;
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    width: 95vw;
+}
+
+.book-container {
+    height: 475px;
+    width: 304px;
+
+    margin: 40px 10px;
+	border-radius: 7px;
+	
+    background-color: black;
+}
+
+.book-container img {
+	border-radius: 7px;
+    height: 475px;
+    width: 304px;
+}
+
+.book-container h3 {
+	text-align: center;
+	text-decoration: none;
+}
